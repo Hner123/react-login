@@ -1,0 +1,69 @@
+.sidePanel {
+  height: calc(100% + 100px);
+  width: 200px;
+  background-color: #263544;
+  position: fixed;
+  top: 0;
+  left: 0;
+  /* margin-top: 80px; */
+  box-shadow: 0 1px 4px 0 rgba(74, 74, 78, 0.12);
+  transition: ease 500ms;
+  z-index: 3;
+  /* overflow: scroll; */
+}
+
+.sidePanel li {
+  color: #b7c0cd;
+  list-style: none;
+  font-size: 0.9rem;
+  cursor: pointer;
+  padding: 10px;
+}
+.sidePanel li:hover {
+  transform: translateX(10px);
+  transition: ease 400ms;
+  color: #fff;
+}
+.sidePanel ul {
+  margin-top: 120px;
+  display: flex;
+  flex-direction: column;
+}
+.sidePanel li svg {
+  font-size: 1rem;
+}
+
+.overlay {
+  height: 100%;
+  width: 100%;
+  background-color: #000;
+  z-index: 1;
+  opacity: 0.3;
+}
+
+.sidePanel.show {
+  transform: translateX(0);
+  transition: ease-in-out 300ms;
+  opacity: 1;
+  visibility: visible;
+}
+
+.sidePanel.hide {
+  transform: translateX(-50px);
+  transition: ease-in-out 300ms;
+  opacity: 0;
+  visibility: hidden;
+}
+
+.overlay.show {
+  /* transform: translateX(0); */
+  transition: ease-in-out 300ms;
+  visibility: visible;
+}
+
+.overlay.hide {
+  /* transform: translateX(-50px); */
+  transition: ease-in-out 300ms;
+  opacity: 0;
+  visibility: hidden;
+}
