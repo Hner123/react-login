@@ -6,6 +6,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import "./style/login.css";
 // import "bootstrap/scss/bootstrap";
 // import  Alert  from 'bootstrap';
+import Booking from "./components/booking";
 
 import Alert from "react-bootstrap/Alert";
 
@@ -66,6 +67,7 @@ export default function Login() {
       <div className="container d-flex align-items-center justify-content-center">
         <div>
           <h3>test changes</h3>
+          <Booking />
         </div>
         <div>
           <form onSubmit={handleSubmit}>
